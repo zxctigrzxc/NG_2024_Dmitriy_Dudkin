@@ -2,14 +2,6 @@
 #include <windows.h>
 using namespace std;
 
-void printTriangle(int stars) {
-    for (int height = 0; height < stars; height++){
-        for (int width = 0; width <= height; width++)
-            cout << "* ";
-        cout << endl;
-    }
-}
-
 int main() {
     int stars = 0;
     cout << "Enter amount of stars: ";
@@ -18,10 +10,13 @@ int main() {
     while (true) {
         system("cls");
 
+        for (int height = 0; height < stars; height++) {
+            for (int width = 0; width <= height; width++) {
+                cout << "* ";
+            }
+            cout << endl;
+        }
 
-        printTriangle(stars);
         Sleep(500);
-
-
     }
 }

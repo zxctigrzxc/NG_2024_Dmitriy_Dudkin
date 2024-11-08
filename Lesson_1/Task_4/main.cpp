@@ -11,12 +11,14 @@ int main()
         cout << "rabotai bolshe";
     }
     if (zarplata > 1000){
-        if (zarplata < 1000000){
+        if (zarplata < 999999){
             cout << "tu molodec";
+
+        }
+        if (zarplata > 999999){
+            cout << "tu millioner!!!";
         }
     }
-    if (zarplata > 1000000){
-        cout << "tu millioner!!!";
-    }
+
 }
 

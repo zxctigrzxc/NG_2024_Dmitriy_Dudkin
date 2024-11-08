@@ -4,32 +4,32 @@ using namespace std;
 
 int main(){
 
-    int q,w;
+    int num1,num2;
 
-    q=0;
-    w=0;
+    num1=0;
+    num2=0;
 
     char s;
 
     while (true){
         cout << "vvedite chisla i operaciyu(*,/,+,-): " << endl;
-        cin>>w>>q>>s;
+        cin>>num1>>num2>>s;
     switch (s){
 
         case '*':
-            cout<<w*q;
+            cout<<num1*num2;
             break;
 
         case '/':
-            cout<<w/q;
+            cout<<num1/num2;
             break;
 
         case '+':
-            cout<<w+q;
+            cout<<num1+num2;
             break;
 
         case '-':
-            cout<<w-q;
+            cout<<num1-num2;
             break;
 
         default:
